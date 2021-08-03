@@ -1,0 +1,296 @@
+/*  Sommaire:
+1 ---- General ----
+2 ---- NavBar----
+3 ---- Presentation ----
+4 ---- Atelier ----
+5 ---- Testimony ----
+6 ---- Join force ----
+7 ---- Footer ----
+---- Compo couleur ----
+Couleur principale: rouge cramoisie: #AF3230
+Gris marons foncé: #4A3932
+orange: #E36127
+Vert pomme foncé: #61BA64
+Vert fluo : #61E327 
+---- import de style ---- */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Marcellus+SC&family=Quantico&display=swap');
+
+/* ---- General ---- */
+html{
+    font-family: 'Marcellus SC', sans-serif;
+    color: white;
+    background: url(../Image/Background\ Body.jpg) no-repeat right fixed;     
+    background-size: cover;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Aclonica, serif;
+    font-size: 50px;
+    color: #E36127;
+}
+
+h2{
+    font-family: Aclonica, serif;
+    font-size: 35px;
+    color: #E36127;
+}
+
+h3{
+    font-family: 'Marcellus SC', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    font-family: Aclonica, sans-serif;
+    color: #AF3230;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-shadow: 1px 2px 2px #E36127;
+}
+
+a:active{
+    font-size: 19px;
+    color: #E36127;
+    text-shadow: 1px 1px 2px #AF3230;
+}
+
+@media only screen and (max-width: 600px){
+    h3{
+        font-size: 18px;
+    }
+}
+
+/* ---- NavBar---- */
+nav img{
+    width: 60px;
+    background: rgba(0, 0, 0, 0);
+    max-height: 70px;
+    height: 100%;
+}
+
+nav{
+    background-color: #4A3932;
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.Nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60%;
+    width: 100%;
+    height: 80px;
+}
+
+.Empty{
+    width: 60px;
+}
+
+nav a img:hover{
+    cursor: pointer;
+    width: 105%;
+}
+
+nav a img:active{
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+    nav a img, .Empty{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .Nav{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* ---- Presentation ---- */
+.Presentation{
+    margin: 120px 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Presentation h1{
+    padding: 50px 0;
+}
+
+.Presentation h3{
+    padding: 50px 25px;
+    background-color: #4A3932;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Presentation h3 span{
+    font-family: Aclonica, sans-serif;
+    font-size: 18px;
+    color: #AF3230;
+}
+
+/* ---- Atelier ---- */
+#Activity{
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.Article{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.ArticleBox{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #AF3230;
+    max-width: 525px;
+    width: 100%;
+    max-height: 100%;
+    height: 550px;
+}
+
+.ArticleBox p{
+    padding: 0 15px;
+}
+
+.ArticleBox img{
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    object-fit: cover;
+    padding: 15px 0;
+}
+
+/* ---- Testimony ---- */
+#Testimony{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E36127;
+    width: 100%;
+    max-height: 100%;
+    height: 1000px;
+    overflow-x: hidden;
+}
+
+.TestimonyRow{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.TestimonyRow h3{
+    font-size: 30px;
+    margin: 0 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.TestimonyRow img{
+    margin: 0 20px;
+    max-width: 700px;
+    width: 100%;
+    max-height: 100%;
+    height: 450px;
+    object-fit: fill;
+}
+
+@media only screen and (min-width: 751px) and (max-width: 1200px) {
+    #Testimony{
+        max-height: 100%;
+        height: 700px;
+    }
+
+    .TestimonyRow img{
+        max-width: 350px;
+        width: 100%;
+        max-height: 100%;
+        height: 225px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #Testimony{
+        max-height: 100%;
+        height: 350px;
+    }
+
+    .TestimonyRow h3{
+        font-size: 20px;
+    }
+
+    .TestimonyRow img{
+        display: none;
+    }
+}
+
+/* ---- Join force ---- */
+#JoinUs{
+    margin: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form{
+    background-color: #4A3932;
+    border-radius: 10%;
+    margin: 50px 0;
+    font-size: 20px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+}
+
+.FormLine{
+    padding: 15px;
+}
+
+#JoinUs img{
+    max-width: 200px;
+}
+
+/* ---- Footer ---- */
+
+footer{
+    text-align: center;
+}
