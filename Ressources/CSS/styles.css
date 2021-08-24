@@ -127,6 +127,12 @@ nav a img:active{
     }
 }
 
+@media only screen and (max-width: 499px) {
+    Nav img{
+        display: none;
+    }
+}
+
 /* ---- Presentation ---- */
 .Presentation{
     margin: 120px 0;
